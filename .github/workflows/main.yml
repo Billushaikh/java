@@ -18,4 +18,6 @@ jobs:
           distribution: 'temurin'
 
       - name: generating package for maven project
-        run: mvn package
+        run: javac Test.java
+      - name: generating package for maven project
+        run: java Test.java
