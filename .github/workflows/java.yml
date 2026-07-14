@@ -8,7 +8,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: cloning github repo
+      - name: cloning github repository
         uses: actions/checkout@v7.0.0
 
       - name: compile java project
