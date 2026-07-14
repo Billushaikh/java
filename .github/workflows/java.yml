@@ -11,14 +11,10 @@ jobs:
       - name: cloning github repo
         uses: actions/checkout@v7.0.0
 
-      - name: setup java
-        uses: actions/setup-java@v5.5.0
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-
       - name: compile java project
+        shell: cmd
         run: javac Test.java
 
       - name: execute java project
+        shell: cmd
         run: java Test
